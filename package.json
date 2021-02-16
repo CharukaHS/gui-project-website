@@ -1,0 +1,14 @@
+{
+  "name": "pms-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:tailwind": "npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./src/css/styles.css"
+  },
+  "author": "CharukaHS",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^2.0.3"
+  }
+}
