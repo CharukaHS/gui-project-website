@@ -1,13 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
     <title>PMS</title>
-  </head>
-  <body>
-    <section class="h-screen"></section>
-  </body>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="absolute z-20 flex flex-row items-center justify-between w-screen px-8 py-4 shadow-sm text-sub">
+        <span class="">Patient Management System</span>
+        <span class="flex flex-row">
+            <span class="ml-4 cursor-pointer">Github</span>
+            <span class="ml-4 cursor-pointer">Learn More</span>
+            <span class="ml-4 cursor-pointer">Donate</span>
+        </span>
+    </nav>
+
+    <!-- Landing -->
+    <section class="flex flex-col justify-between h-screen pt-16">
+        <div class="px-8">
+            <div class="mt-6">
+                <h2 class="text-xl leading-none">
+                    Saving hours of valuable time of <br />
+                    medical sector
+                </h2>
+            </div>
+        </div>
+        <div class="relative flex flex-col items-center justify-center flex-grow my-6 bg-primary">
+            <img src="./assets/images/patient-ui.png" id="ss1" class="shadow ss " alt="" />
+            <img src="./assets/images/doctors-ui.png" id="ss2" class="shadow ss " alt="" />
+            <img src="./assets/images/main-ui.png" id="ss3" class="shadow ss" alt="" />
+            <img src="./assets/images/patient-profile.png" id="ss4" class="shadow ss" alt="" />
+        </div>
+        <div class="flex flex-col items-center justify-between px-8 mb-12 md:flex-row">
+            <span>
+                <h1 class="text-2xl">PMS // Manage Patient's data seamlessly</h1>
+                <h3 class="leading-none text-sub">
+                    Free and open-source database <br />
+                    Specially designed for medical centers
+                </h3>
+            </span>
+            <span class="flex flex-row">
+                <span class="px-8 py-3 mr-4 border-2 rounded-full cursor-pointer border-primary">Learn More</span>
+                <span class="px-8 py-3 border-2 rounded-full cursor-pointer border-primary bg-primary">Try
+                    Now</span>
+            </span>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="flex flex-col items-center justify-center pb-12 text-center">
+        <!-- why pms -->
+        <div class="w-full py-16 bg-secondry">
+            <h1 class="mb-8 text-2xl text-white">Why PMS?</h1>
+
+            <h3 class="max-w-6xl px-8 mx-auto text-white">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+                accusamus cumque dolor nostrum voluptatibus aspernatur quidem ea
+                consectetur, iure, dignissimos fuga. Repellendus animi dolores nulla.
+                Veniam a quidem aliquam sit!
+            </h3>
+
+        </div>
+
+        <!-- features -->
+        <div class="relative w-screen">
+            <div class="absolute w-full h-56 bg-secondry" style="z-index: -1"></div>
+
+            <h1 class="mb-8 text-2xl text-white">Features</h1>
+
+            <!-- features container -->
+            <div class="flex flex-col flex-wrap items-center justify-center lg:flex-row">
+                <!-- feature cards -->
+                <div
+                    class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
+                    <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
+                        <img src="./assets/icons/guide.svg" class="w-16" alt="" />
+                    </span>
+                    <span class="pl-4">
+                        <h3 class="text-lg text-left">Easily Customizable</h3>
+                        <h4 class="leading-none text-left text-sub">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h4>
+                    </span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
+                    <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
+                        <img src="./assets/icons/guide.svg" class="w-16" alt="" />
+                    </span>
+                    <span class="pl-4">
+                        <h3 class="text-lg text-left">Easily Customizable</h3>
+                        <h4 class="leading-none text-left text-sub">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h4>
+                    </span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
+                    <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
+                        <img src="./assets/icons/guide.svg" class="w-16" alt="" />
+                    </span>
+                    <span class="pl-4">
+                        <h3 class="text-lg text-left">Easily Customizable</h3>
+                        <h4 class="leading-none text-left text-sub">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h4>
+                    </span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
+                    <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
+                        <img src="./assets/icons/guide.svg" class="w-16" alt="" />
+                    </span>
+                    <span class="pl-4">
+                        <h3 class="text-lg text-left">Easily Customizable</h3>
+                        <h4 class="leading-none text-left text-sub">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </h4>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- testimonials -->
+        <div>
+            <h1 class="my-8 text-2xl">Some feedback we received</h1>
+
+            <div class="flex flex-row items-center max-w-3xl px-8">
+                <span>
+                    <img src="./images/portrait-1.jpg" class="flex-shrink-0 w-64 border-4 rounded-full border-primary"
+                        alt="" />
+                </span>
+                <span class="px-8 text-justify">
+                    <p class="text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium
+                        veritatis cumque.
+                        Officia pariatur aspernatur commodi quo accusamus. Est voluptate fugit similique quisquam nulla,
+                        neque eaque eligendi natus consequuntur aliquid.</p>
+                    <p class="text-right">- Lorem - Some place</p>
+                </span>
+            </div>
+        </div>
+
+        <!-- try now -->
+        <div class="w-full">
+            <h1 class="my-8 text-2xl">Try PMS now</h1>
+
+            <div class="flex flex-col items-center justify-center w-full md:flex-row">
+                <div
+                    class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 bg-white border-2 h-80 border-secondry rounded-xl">
+                    <h3>Try it yourself</h3>
+
+
+                    <ul class="px-8 text-left list-disc list-inside">
+                        <li>Absolutly free</li>
+                        <li>Easy to install</li>
+                        <li>Modify as you like</li>
+                    </ul>
+
+                    <span
+                        class="flex items-center justify-center h-12 text-white rounded-full cursor-pointer w-44 bg-secondry">
+                        Download
+                    </span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 text-white h-80 bg-secondry rounded-xl">
+                    <h3>Hire a consultant</h3>
+
+                    <ul class="px-8 text-left list-disc list-inside">
+                        <li>Absolutly free</li>
+                        <li>Easy to install</li>
+                        <li>Modify as you like</li>
+                    </ul>
+
+                    <span
+                        class="flex items-center justify-center h-12 bg-white rounded-full cursor-pointer w-44 text-secondry">
+                        Contact Us
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supporting -->
+    <section class="flex flex-col justify-center pt-8 pb-12 text-center bg-thirdary ">
+        <h1 class="mb-4 text-2xl">Contributors</h1>
+
+        <h3 class="px-8">
+            This open-source application is made by hours of time and grams of
+            coffee of following people ❤
+        </h3>
+
+        <div class="flex flex-col items-center justify-center my-8 md:flex-row">
+            <div class="flex flex-col items-center m-4 w-54">
+                <img src="https://via.placeholder.com/150" class="w-32 rounded-full" alt="" />
+                <h4>Charuka Samarakoon</h4>
+                <a href="https://twitter.com/CharukaHS" target="_blank">@CharukaHS</a>
+            </div>
+            <div class="flex flex-col items-center m-4 w-54">
+                <img src="https://via.placeholder.com/150" class="w-32 rounded-full" alt="" />
+                <h4>Madhura Pabudanan</h4>
+                <a href="https://twitter.com/madhurapabu" target="_blank">@madhurapabu</a>
+            </div>
+        </div>
+
+        <h3 class="p-8 text-2xl">
+            You can also become a contributor of PMS
+        </h3>
+
+        <div class="flex flex-col items-center justify-center px-4">
+            <div
+                class="flex flex-row items-center w-full max-w-xl py-8 pl-8 m-4 text-left transition-shadow duration-300 ease-in bg-white border-2 hover:shadow-xl border-primary rounded-xl">
+                <div>
+                    <h3 class="text-xl">I can support financialy</h3>
+                    <h4>With your financial support we can assure continues support, answering feature requests and
+                        hunting
+                        bugs
+                    </h4>
+                </div>
+                <span
+                    class="flex items-center justify-center flex-shrink-0 h-12 mx-4 text-black rounded-full cursor-pointer bg-primary w-36">
+                    Donate
+                </span>
+            </div>
+
+            <div
+                class="flex flex-row items-center w-full max-w-xl py-8 pl-8 m-4 text-left transition-shadow duration-300 ease-in bg-white border-2 hover:shadow-xl border-secondry rounded-xl">
+                <div class="w-full">
+                    <h3 class="text-xl">I know coding :D</h3>
+                    <h4>Hop in then, together we can make PMS better than ever!!
+                    </h4>
+                </div>
+                <span
+                    class="flex items-center justify-center flex-shrink-0 h-12 mx-4 text-white rounded-full cursor-pointer bg-secondry w-36">
+                    Github
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+
 </html>

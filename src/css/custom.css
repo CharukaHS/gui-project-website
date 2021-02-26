@@ -1,0 +1,37 @@
+.ss {
+  position: absolute;
+  height: 50%;
+  width: auto;
+  transition-property: all;
+  transition-delay: 500ms;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.ss_0 {
+  transform: translate(-100px, -100px);
+  opacity: 0;
+  z-index: 1;
+}
+
+.ss_1 {
+  opacity: 1;
+  transform: translate(-50px, -50px);
+  z-index: 2;
+  background-image: url("../assets/images/doctors-ui.png");
+}
+
+.ss_2 {
+  transform: translate(0px, 0px);
+  z-index: 3;
+}
+
+.ss_3 {
+  transform: translate(50px, 50px);
+  z-index: 4;
+}
+
+.ss_4 {
+  transform: translate(100px, 100px);
+  opacity: 0;
+}
