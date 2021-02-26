@@ -1,11 +1,30 @@
 .ss {
   position: absolute;
-  height: 50%;
-  width: auto;
   transition-property: all;
   transition-delay: 500ms;
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
+  background-size: contain;
+}
+
+#ss1 {
+  background-image: url("../assets/images/patient-profile.png");
+}
+
+#ss2 {
+  background-image: url("../assets/images/patient-ui.png");
+}
+
+#ss3 {
+  background-image: url("../assets/images/doctors-ui.png");
+}
+
+#ss4 {
+  background-image: url("../assets/images/main-ui.png");
+}
+
+.ss_hidden {
+  display: none;
 }
 
 .ss_0 {
@@ -18,7 +37,6 @@
   opacity: 1;
   transform: translate(-50px, -50px);
   z-index: 2;
-  background-image: url("../assets/images/doctors-ui.png");
 }
 
 .ss_2 {
