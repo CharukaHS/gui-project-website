@@ -21,9 +21,9 @@
     <nav class="absolute z-20 flex flex-row items-center justify-between w-screen px-8 py-4 shadow-sm text-sub">
         <span>Patient Management System</span>
         <span class="flex flex-row">
-            <span class="ml-4 cursor-pointer">Github</span>
-            <span class="ml-4 cursor-pointer">Learn More</span>
-            <span class="ml-4 cursor-pointer">Donate</span>
+            <span class="ml-4 cursor-pointer"><a href="https://github.com/pms-lk/" target="_blank">Github</a></span>
+            <span class="ml-4 cursor-pointer"><a href="#learnmore">Learn More</a></span>
+            <span class="ml-4 cursor-pointer"><a href="#support">Donate</a></span>
         </span>
     </nav>
 
@@ -52,15 +52,16 @@
                 </h3>
             </span>
             <span class="flex flex-row">
-                <span class="px-8 py-3 mr-4 border-2 rounded-full cursor-pointer border-primary">Learn More</span>
-                <span class="px-8 py-3 border-2 rounded-full cursor-pointer border-primary bg-primary">Try
-                    Now</span>
+                <span class="px-8 py-3 mr-4 border-2 rounded-full cursor-pointer border-primary"><a
+                        href="#learnmore">Learn More</a></span>
+                <span class="px-8 py-3 border-2 rounded-full cursor-pointer border-primary bg-primary"><a
+                        href="#trynow">Try Now</a></span>
             </span>
         </div>
     </section>
 
     <!-- Content -->
-    <section class="flex flex-col items-center justify-center pb-12 text-center">
+    <section id="learnmore" class="flex flex-col items-center justify-center pb-12 text-center">
         <!-- why pms -->
         <div class="w-full py-16 bg-secondry">
             <h1 class="mb-8 text-3xl text-white font-topic">Why PMS?</h1>
@@ -86,13 +87,25 @@
                 <div
                     class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
                     <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
-                        <img src="./assets/icons/guide.svg" class="w-16" alt="" />
+                        <img src="./assets/icons/add.svg" class="w-16" alt="" />
                     </span>
                     <span class="pl-4">
-                        <h3 class="text-lg text-left font-topic">Easily
-                            Customizable</h3>
-                        <h4 class="leading-none text-left text-sub" style="font-family: 'Ubuntu', sans-serif;">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <h3 class="text-lg text-left font-topic">Open Source</h3>
+                        <h4 class="leading-none text-left text-sub">
+                            Built up with the help of awesome community.
+                        </h4>
+                    </span>
+                </div>
+
+                <div
+                    class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
+                    <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
+                        <img src="./assets/icons/customer-support.svg" class="w-16" alt="" />
+                    </span>
+                    <span class="pl-4">
+                        <h3 class="text-lg text-left font-topic">Easily Customizable</h3>
+                        <h4 class="leading-none text-left text-sub">
+                            Don't like what you see, change it as you prefer
                         </h4>
                     </span>
                 </div>
@@ -103,9 +116,9 @@
                         <img src="./assets/icons/guide.svg" class="w-16" alt="" />
                     </span>
                     <span class="pl-4">
-                        <h3 class="text-lg text-left">Easily Customizable</h3>
+                        <h3 class="text-lg text-left font-topic">Well documented</h3>
                         <h4 class="leading-none text-left text-sub">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Everything is documented, anybody can follow and modify as they like
                         </h4>
                     </span>
                 </div>
@@ -113,25 +126,12 @@
                 <div
                     class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
                     <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
-                        <img src="./assets/icons/guide.svg" class="w-16" alt="" />
+                        <img src="./assets/icons/verified.svg" class="w-16" alt="" />
                     </span>
                     <span class="pl-4">
-                        <h3 class="text-lg text-left">Easily Customizable</h3>
+                        <h3 class="text-lg text-left font-topic">Data Security</h3>
                         <h4 class="leading-none text-left text-sub">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </h4>
-                    </span>
-                </div>
-
-                <div
-                    class="flex flex-col items-center w-3/4 h-auto p-8 m-4 bg-white shadow-xl md:flex-row md:w-1/2 lg:w-1/3 md:h-44 rounded-2xl">
-                    <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
-                        <img src="./assets/icons/guide.svg" class="w-16" alt="" />
-                    </span>
-                    <span class="pl-4">
-                        <h3 class="text-lg text-left">Easily Customizable</h3>
-                        <h4 class="leading-none text-left text-sub">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            PMS is built with security as the first priority.
                         </h4>
                     </span>
                 </div>
@@ -145,21 +145,20 @@
 
             <div class="flex flex-row items-center max-w-3xl px-8">
                 <span>
-                    <img src="./images/portrait-1.jpg" class="flex-shrink-0 w-64 border-4 rounded-full border-primary"
-                        alt="" />
+                    <img src="./assets/images/portrait-1.jpg"
+                        class="flex-shrink-0 w-64 border-4 rounded-full border-primary" alt="" />
                 </span>
                 <span class="px-8 text-justify">
-                    <p class="text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime laudantium
-                        veritatis cumque.
-                        Officia pariatur aspernatur commodi quo accusamus. Est voluptate fugit similique quisquam nulla,
-                        neque eaque eligendi natus consequuntur aliquid.</p>
-                    <p class="text-right">- Lorem - Some place</p>
+                    <p class="text-sub">I'm have been working in medical sector as a nurse for six years and I know it
+                        is a pain to maintain records physically. And since I switched to PMS, I don't even have to
+                        worry about the records </p>
+                    <p class="text-right">- Agatha - Central Hospital</p>
                 </span>
             </div>
         </div>
 
         <!-- try now -->
-        <div class="w-full">
+        <div id="trynow" class="w-full">
             <h1 class="my-8 text-2xl font-topic">Try PMS now</h1>
 
             <div class="flex flex-col items-center justify-center w-full md:flex-row">
@@ -200,7 +199,7 @@
     </section>
 
     <!-- Supporting -->
-    <section class="flex flex-col justify-center pt-8 pb-12 text-center bg-thirdary ">
+    <section id="support" class="flex flex-col justify-center pt-8 pb-12 text-center bg-thirdary ">
         <h1 class="mb-4 text-2xl font-topic">Contributors</h1>
 
         <h3 class="px-8">
@@ -210,13 +209,13 @@
 
         <div class="flex flex-col items-center justify-center my-8 md:flex-row">
             <div class="flex flex-col items-center m-4 w-54">
-                <img src="https://via.placeholder.com/150" class="w-32 rounded-full" alt="" />
-                <h4>Charuka Samarakoon</h4>
+                <img src="./assets/images/charukahs.jpg" class="object-cover w-32 h-32 rounded-full" alt="" />
+                <h4 class="mt-4">Charuka Samarakoon</h4>
                 <a href="https://twitter.com/CharukaHS" target="_blank">@CharukaHS</a>
             </div>
             <div class="flex flex-col items-center m-4 w-54">
-                <img src="https://via.placeholder.com/150" class="w-32 rounded-full" alt="" />
-                <h4>Madhura Pabudanan</h4>
+                <img src="./assets/images/madhurapabu.jpeg" class="object-cover w-32 h-32 rounded-full" alt="" />
+                <h4 class="mt-4">Madhura Pabudanan</h4>
                 <a href="https://twitter.com/madhurapabu" target="_blank">@madhurapabu</a>
             </div>
         </div>
@@ -255,6 +254,69 @@
             </div>
         </div>
     </section>
+
+    <!-- contact info -->
+    <section id="contactus" class="flex flex-col w-screen py-16 text-center bg-primary">
+        <span class="py-4">
+            <h2 class="text-xl font-topic">Contact us via email</h2>
+            <h1 class="text-3xl">hello@pms.lk</h1>
+        </span>
+
+        <span class="py-4">
+            <h2 class="text-xl font-topic">Our discord server</h2>
+            <h1 class="text-3xl cursor-pointer">discord.gg/pms-lk</h1>
+        </span>
+    </section>
+
+    <footer class="pt-10 bg-black">
+        <div class="flex flex-wrap max-w-6xl m-auto text-gray-800 justify-left">
+
+            <!-- Col-1 -->
+            <div class="w-1/2 p-5 sm:w-4/12 md:w-3/12">
+                <div class="mb-6 text-xs font-medium text-gray-400 uppercase">External links</div>
+
+                <!-- Links -->
+                <a href="https://github.com/pms-lk/"
+                    class="block my-3 text-sm font-medium text-gray-300 duration-700 hover:text-gray-100">
+                    Github
+                </a>
+                <a href="#" class="block my-3 text-sm font-medium text-gray-300 duration-700 hover:text-gray-100">
+                    Discord server
+                </a>
+            </div>
+
+            <!-- Col-2 -->
+            <div class="w-1/2 p-5 sm:w-4/12 md:w-3/12">
+                <!-- Col Title -->
+                <div class="mb-6 text-xs font-medium text-gray-400 uppercase">Contact Us</div>
+
+                <!-- Links -->
+                <a href="#" class="block my-3 text-sm font-medium text-gray-300 duration-700 hover:text-gray-100">
+                    hello@pms.lk
+                </a>
+                <a href="https://twitter.com/CharukaHS"
+                    class="block my-3 text-sm font-medium text-gray-300 duration-700 hover:text-gray-100">
+                    @CharukaHS
+                </a>
+                <a href="https://twitter.com/madhurapabu"
+                    class="block my-3 text-sm font-medium text-gray-300 duration-700 hover:text-gray-100">
+                    @madhurapabu
+                </a>
+            </div>
+        </div>
+
+        <!-- Copyright Bar -->
+        <div class="pt-2">
+            <div
+                class="flex flex-col max-w-6xl px-3 pt-5 pb-5 m-auto text-sm text-gray-400 border-t border-gray-500 md:flex-row">
+                <div class="mt-2">© Copyright 2021. All Rights Reserved. <br />
+                    Disclaimer: This website created only for the demostrate purpose. PMS is an actual project creating
+                    and managing by @CharukaHS. Above mentioned features may or may not include in the real PMS
+                    <a href="https://github.com/CharukaHS/eies-foeuor" class="pl-4" target="_blank"> Made with 11ty </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/main.js"></script>
 </body>
