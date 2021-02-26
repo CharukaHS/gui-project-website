@@ -5,15 +5,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PMS</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/custom.css" />
-    <title>PMS</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
+<body class="font-primary">
     <!-- Navigation bar -->
     <nav class="absolute z-20 flex flex-row items-center justify-between w-screen px-8 py-4 shadow-sm text-sub">
-        <span class="">Patient Management System</span>
+        <span>Patient Management System</span>
         <span class="flex flex-row">
             <span class="ml-4 cursor-pointer">Github</span>
             <span class="ml-4 cursor-pointer">Learn More</span>
@@ -22,10 +28,10 @@
     </nav>
 
     <!-- Landing -->
-    <section class="flex flex-col justify-between h-screen pt-16">
+    <section class="flex flex-col justify-between h-screen pt-16 ">
         <div class="px-8">
             <div class="mt-6">
-                <h2 class="text-xl leading-none">
+                <h2 class="text-xl leading-none ">
                     Saving hours of valuable time of <br />
                     medical sector
                 </h2>
@@ -39,7 +45,7 @@
         </div>
         <div class="flex flex-col items-center justify-between px-8 mb-12 md:flex-row">
             <span>
-                <h1 class="text-2xl">PMS // Manage Patient's data seamlessly</h1>
+                <h1 class="text-2xl">PMS // Manage Patients' data seamlessly</h1>
                 <h3 class="leading-none text-sub">
                     Free and open-source database <br />
                     Specially designed for medical centers
@@ -57,22 +63,22 @@
     <section class="flex flex-col items-center justify-center pb-12 text-center">
         <!-- why pms -->
         <div class="w-full py-16 bg-secondry">
-            <h1 class="mb-8 text-2xl text-white">Why PMS?</h1>
+            <h1 class="mb-8 text-3xl text-white font-topic">Why PMS?</h1>
 
-            <h3 class="max-w-6xl px-8 mx-auto text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-                accusamus cumque dolor nostrum voluptatibus aspernatur quidem ea
-                consectetur, iure, dignissimos fuga. Repellendus animi dolores nulla.
-                Veniam a quidem aliquam sit!
+            <h3 class="max-w-6xl px-8 mx-auto text-lg text-white">
+                Patient Management System (PMS) is an open source application made specially for the use of medical
+                sector. Natively it support storing patient records securely with military grade AES-256 encryption,
+                view and manage patients and premises employees and manage inventory. User can add own features thanks
+                to open-source.
             </h3>
 
         </div>
 
         <!-- features -->
         <div class="relative w-screen">
-            <div class="absolute w-full h-56 bg-secondry" style="z-index: -1"></div>
+            <div class="absolute w-full h-56 max-w-screen bg-secondry" style="z-index: -1"></div>
 
-            <h1 class="mb-8 text-2xl text-white">Features</h1>
+            <h1 class="mb-8 text-3xl text-white font-topic">Features</h1>
 
             <!-- features container -->
             <div class="flex flex-col flex-wrap items-center justify-center lg:flex-row">
@@ -83,8 +89,9 @@
                         <img src="./assets/icons/guide.svg" class="w-16" alt="" />
                     </span>
                     <span class="pl-4">
-                        <h3 class="text-lg text-left">Easily Customizable</h3>
-                        <h4 class="leading-none text-left text-sub">
+                        <h3 class="text-lg text-left font-topic">Easily
+                            Customizable</h3>
+                        <h4 class="leading-none text-left text-sub" style="font-family: 'Ubuntu', sans-serif;">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </h4>
                     </span>
@@ -134,7 +141,7 @@
 
         <!-- testimonials -->
         <div>
-            <h1 class="my-8 text-2xl">Some feedback we received</h1>
+            <h1 class="my-8 text-2xl font-topic">Some feedback we received</h1>
 
             <div class="flex flex-row items-center max-w-3xl px-8">
                 <span>
@@ -153,12 +160,12 @@
 
         <!-- try now -->
         <div class="w-full">
-            <h1 class="my-8 text-2xl">Try PMS now</h1>
+            <h1 class="my-8 text-2xl font-topic">Try PMS now</h1>
 
             <div class="flex flex-col items-center justify-center w-full md:flex-row">
                 <div
                     class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 bg-white border-2 h-80 border-secondry rounded-xl">
-                    <h3>Try it yourself</h3>
+                    <h3 class="text-2xl font-topic">Deploy yourself</h3>
 
 
                     <ul class="px-8 text-left list-disc list-inside">
@@ -175,7 +182,7 @@
 
                 <div
                     class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 text-white h-80 bg-secondry rounded-xl">
-                    <h3>Hire a consultant</h3>
+                    <h3 class="text-2xl font-topic">Hire a consultant</h3>
 
                     <ul class="px-8 text-left list-disc list-inside">
                         <li>Absolutly free</li>
@@ -194,7 +201,7 @@
 
     <!-- Supporting -->
     <section class="flex flex-col justify-center pt-8 pb-12 text-center bg-thirdary ">
-        <h1 class="mb-4 text-2xl">Contributors</h1>
+        <h1 class="mb-4 text-2xl font-topic">Contributors</h1>
 
         <h3 class="px-8">
             This open-source application is made by hours of time and grams of
@@ -214,7 +221,7 @@
             </div>
         </div>
 
-        <h3 class="p-8 text-2xl">
+        <h3 class="p-8 text-2xl font-topic">
             You can also become a contributor of PMS
         </h3>
 

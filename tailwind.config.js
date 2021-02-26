@@ -8,11 +8,15 @@ module.exports = {
         secondry: "#2C1292",
         thirdary: "#F4F7F4",
       },
-      textColor: {
-        sub: "#707070",
+      fontFamily: {
+        topic: ["Roboto Condensed", "sans-serif"],
+        primary: ["Montserrat", "sans-serif"],
       },
       maxHeight: {
         "1/2": "50%",
+      },
+      textColor: {
+        sub: "#707070",
       },
     },
   },
