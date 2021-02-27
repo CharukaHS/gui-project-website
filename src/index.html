@@ -18,10 +18,11 @@
 
 <body class="font-primary">
     <!-- Navigation bar -->
-    <nav class="absolute z-20 flex flex-row items-center justify-between w-screen px-8 py-4 shadow-sm text-sub">
-        <span>Patient Management System</span>
+    <nav
+        class="absolute z-20 flex flex-col items-start justify-between w-screen px-8 py-4 shadow-sm md:items-center md:flex-row text-sub">
+        <span class="hidden md:block">Patient Management System</span>
         <span class="flex flex-row">
-            <span class="ml-4 cursor-pointer"><a href="https://github.com/pms-lk/" target="_blank">Github</a></span>
+            <span class="cursor-pointer md:ml-4"><a href="https://github.com/pms-lk/" target="_blank">Github</a></span>
             <span class="ml-4 cursor-pointer"><a href="#learnmore">Learn More</a></span>
             <span class="ml-4 cursor-pointer"><a href="#support">Donate</a></span>
         </span>
@@ -51,10 +52,10 @@
                     Specially designed for medical centers
                 </h3>
             </span>
-            <span class="flex flex-row">
-                <span class="px-8 py-3 mr-4 border-2 rounded-full cursor-pointer border-primary"><a
+            <span class="flex flex-row items-center justify-center mt-4 md:mt-0">
+                <span class="px-8 py-3 mr-4 text-center border-2 rounded-full cursor-pointer border-primary"><a
                         href="#learnmore">Learn More</a></span>
-                <span class="px-8 py-3 border-2 rounded-full cursor-pointer border-primary bg-primary"><a
+                <span class="px-8 py-3 text-center border-2 rounded-full cursor-pointer border-primary bg-primary"><a
                         href="#trynow">Try Now</a></span>
             </span>
         </div>
@@ -89,9 +90,9 @@
                     <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
                         <img src="./assets/icons/add.svg" class="w-16" alt="" />
                     </span>
-                    <span class="pl-4">
-                        <h3 class="text-lg text-left font-topic">Open Source</h3>
-                        <h4 class="leading-none text-left text-sub">
+                    <span class="w-full pl-4 text-center md:text-left">
+                        <h3 class="text-lg font-topic">Open Source</h3>
+                        <h4 class="leading-none text-sub">
                             Built up with the help of awesome community.
                         </h4>
                     </span>
@@ -102,9 +103,9 @@
                     <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
                         <img src="./assets/icons/customer-support.svg" class="w-16" alt="" />
                     </span>
-                    <span class="pl-4">
-                        <h3 class="text-lg text-left font-topic">Easily Customizable</h3>
-                        <h4 class="leading-none text-left text-sub">
+                    <span class="w-full pl-4 text-center md:text-left">
+                        <h3 class="text-lg font-topic">Easily Customizable</h3>
+                        <h4 class="leading-none text-sub">
                             Don't like what you see, change it as you prefer
                         </h4>
                     </span>
@@ -115,10 +116,10 @@
                     <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
                         <img src="./assets/icons/guide.svg" class="w-16" alt="" />
                     </span>
-                    <span class="pl-4">
-                        <h3 class="text-lg text-left font-topic">Well documented</h3>
-                        <h4 class="leading-none text-left text-sub">
-                            Everything is documented, anybody can follow and modify as they like
+                    <span class="w-full pl-4 text-center md:text-left">
+                        <h3 class="text-lg font-topic">Well documented</h3>
+                        <h4 class="leading-none text-sub">
+                            Everything is documented, anybody can follow it
                         </h4>
                     </span>
                 </div>
@@ -128,9 +129,9 @@
                     <span class="flex items-center justify-center flex-shrink-0 w-32 h-32 m-4 rounded-full bg-primary">
                         <img src="./assets/icons/verified.svg" class="w-16" alt="" />
                     </span>
-                    <span class="pl-4">
-                        <h3 class="text-lg text-left font-topic">Data Security</h3>
-                        <h4 class="leading-none text-left text-sub">
+                    <span class="w-full pl-4 text-center md:text-left">
+                        <h3 class="text-lg font-topic">Data Security</h3>
+                        <h4 class="leading-none text-sub">
                             PMS is built with security as the first priority.
                         </h4>
                     </span>
@@ -144,7 +145,7 @@
             <h1 class="my-8 text-2xl font-topic">Some feedback we received</h1>
 
             <div class="flex flex-row items-center max-w-3xl px-8">
-                <span>
+                <span class="hidden md:block">
                     <img src="./assets/images/portrait-1.jpg"
                         class="flex-shrink-0 w-64 border-4 rounded-full border-primary" alt="" />
                 </span>
@@ -163,7 +164,7 @@
 
             <div class="flex flex-col items-center justify-center w-full md:flex-row">
                 <div
-                    class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 bg-white border-2 h-80 border-secondry rounded-xl">
+                    class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 my-2 bg-white border-2 h-80 border-secondry rounded-xl">
                     <h3 class="text-2xl font-topic">Deploy yourself</h3>
 
 
@@ -175,12 +176,11 @@
 
                     <span
                         class="flex items-center justify-center h-12 text-white rounded-full cursor-pointer w-44 bg-secondry">
-                        Download
-                    </span>
+                        <a href="https://github.com/pms-lk/">Download</a></span>
                 </div>
 
                 <div
-                    class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 text-white h-80 bg-secondry rounded-xl">
+                    class="flex flex-col items-center justify-around w-full max-w-xs py-8 mx-4 my-2 text-white h-80 bg-secondry rounded-xl">
                     <h3 class="text-2xl font-topic">Hire a consultant</h3>
 
                     <ul class="px-8 text-left list-disc list-inside">
@@ -191,7 +191,7 @@
 
                     <span
                         class="flex items-center justify-center h-12 bg-white rounded-full cursor-pointer w-44 text-secondry">
-                        Contact Us
+                        <a href="#contactus">Contact Us</a>
                     </span>
                 </div>
             </div>
@@ -226,7 +226,7 @@
 
         <div class="flex flex-col items-center justify-center px-4">
             <div
-                class="flex flex-row items-center w-full max-w-xl py-8 pl-8 m-4 text-left transition-shadow duration-300 ease-in bg-white border-2 hover:shadow-xl border-primary rounded-xl">
+                class="flex flex-col items-center w-full max-w-xl px-8 py-8 m-4 text-left transition-shadow duration-300 ease-in bg-white border-2 md:pr-0 md:flex-row hover:shadow-xl border-primary rounded-xl">
                 <div>
                     <h3 class="text-xl">I can support financialy</h3>
                     <h4>With your financial support we can assure continues support, answering feature requests and
@@ -235,21 +235,21 @@
                     </h4>
                 </div>
                 <span
-                    class="flex items-center justify-center flex-shrink-0 h-12 mx-4 text-black rounded-full cursor-pointer bg-primary w-36">
+                    class="flex items-center justify-center flex-shrink-0 h-12 mx-4 my-2 text-black rounded-full cursor-pointer md:my-0 bg-primary w-36">
                     Donate
                 </span>
             </div>
 
             <div
-                class="flex flex-row items-center w-full max-w-xl py-8 pl-8 m-4 text-left transition-shadow duration-300 ease-in bg-white border-2 hover:shadow-xl border-secondry rounded-xl">
+                class="flex flex-col items-center w-full max-w-xl px-8 py-8 m-4 text-left transition-shadow duration-300 ease-in bg-white border-2 md:pr-0 md:flex-row hover:shadow-xl border-secondry rounded-xl">
                 <div class="w-full">
                     <h3 class="text-xl">I know coding :D</h3>
                     <h4>Hop in then, together we can make PMS better than ever!!
                     </h4>
                 </div>
                 <span
-                    class="flex items-center justify-center flex-shrink-0 h-12 mx-4 text-white rounded-full cursor-pointer bg-secondry w-36">
-                    Github
+                    class="flex items-center justify-center flex-shrink-0 h-12 mx-4 my-2 text-white rounded-full cursor-pointer md:my-0 bg-secondry w-36">
+                    <a href="https://github.com/pms-lk/">Github</a>
                 </span>
             </div>
         </div>
@@ -268,7 +268,8 @@
         </span>
     </section>
 
-    <footer class="pt-10 bg-black">
+    <!-- footer -->
+    <footer class="w-screen px-4 pt-10 bg-black">
         <div class="flex flex-wrap max-w-6xl m-auto text-gray-800 justify-left">
 
             <!-- Col-1 -->
@@ -311,9 +312,9 @@
                 class="flex flex-col max-w-6xl px-3 pt-5 pb-5 m-auto text-sm text-gray-400 border-t border-gray-500 md:flex-row">
                 <div class="mt-2">© Copyright 2021. All Rights Reserved. <br />
                     Disclaimer: This website created only for the demostrate purpose. PMS is an actual project creating
-                    and managing by @CharukaHS. Above mentioned features may or may not include in the real PMS
-                    <a href="https://github.com/CharukaHS/gui-project-website" class="pl-4" target="_blank"> Made with
-                        11ty </a>
+                    and managing by @CharukaHS. Above mentioned features may or may not include in the real PMS <br />
+                    <a href="https://github.com/CharukaHS/gui-project-website" target="_blank">Hosted on
+                        Github</a>
                 </div>
             </div>
         </div>
