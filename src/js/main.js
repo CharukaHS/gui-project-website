@@ -1,7 +1,3 @@
-window.onresize = () => {
-  setScreenshotWidth();
-};
-
 const setScreenshotWidth = () => {
   // setting width for screenshot container dynamically
 
@@ -49,7 +45,31 @@ const animateScreenshots = () => {
   }, 5000);
 };
 
+const animateFeatureCards = () => {
+  const cards = document.getElementsByClassName("feature");
+  const current = window.pageYOffset;
+
+  for (let index = 0; index < cards.length; index++) {
+    const element = cards[index];
+    const top = element.getBoundingClientRect().top;
+
+    if (current + 100 < top) {
+      element.classList.add("feature-active");
+    } else {
+      element.classList.remove("feature-active");
+    }
+  }
+};
+
 // document onready
 (() => {
+  window.onresize = () => {
+    setScreenshotWidth();
+  };
+
+  window.onscroll = () => {
+    animateFeatureCards();
+  };
+
   animateScreenshots();
 })();

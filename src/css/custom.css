@@ -1,7 +1,9 @@
+/* global */
 html {
   scroll-behavior: smooth;
 }
 
+/* landing-screenshot-animation */
 .ss {
   position: absolute;
   transition-property: all;
@@ -56,4 +58,19 @@ html {
 .ss_4 {
   transform: translate(100px, 100px);
   opacity: 0;
+}
+
+/* features scroll-fade */
+.feature {
+  transition-property: all;
+  transition-delay: 100ms;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-active {
+  opacity: 0;
+  transform: translateY(50px);
 }
