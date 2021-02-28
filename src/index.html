@@ -19,7 +19,7 @@
 <body class="font-primary">
     <!-- Navigation bar -->
     <nav
-        class="absolute z-20 flex flex-col items-start justify-between w-screen px-8 py-4 shadow-sm md:items-center md:flex-row text-sub">
+        class="absolute z-20 flex flex-col items-start justify-between w-screen max-w-full px-8 py-4 shadow-sm md:items-center md:flex-row text-sub">
         <span class="hidden md:block">Patient Management System</span>
         <span class="flex flex-row">
             <span class="cursor-pointer md:ml-4"><a href="https://github.com/pms-lk/" target="_blank">Github</a></span>
@@ -77,7 +77,7 @@
         </div>
 
         <!-- features -->
-        <div class="relative w-screen">
+        <div class="relative w-screen max-w-full">
             <div class="absolute w-full h-56 max-w-screen bg-secondry" style="z-index: -1"></div>
 
             <h1 class="mb-8 text-3xl text-white font-topic">Features</h1>
@@ -196,6 +196,35 @@
                 </div>
             </div>
         </div>
+
+        <!-- system requirements -->
+        <div id="systemreq" class="w-screen">
+            <h1 class="my-8 text-2xl font-topic">System requirements</h1>
+
+            <div class="flex flex-col items-center justify-center w-full px-4">
+                <div
+                    class="flex flex-row justify-between w-full max-w-2xl mb-4 transition-colors ease-in border-b-2 cursor-default border-secondry hover:border-primary">
+                    <h2 class="text-left">Operating system</h2>
+                    <h2 class="text-right">Windows XP SP2 or higher</h2>
+                </div>
+                <div
+                    class="flex flex-row justify-between w-full max-w-2xl mb-4 transition-colors ease-in border-b-2 cursor-default border-secondry hover:border-primary">
+                    <h2 class="text-left">Processor</h2>
+                    <h2 class="text-right">Pentium 4, 1GHz speed</h2>
+                </div>
+                <div
+                    class="flex flex-row justify-between w-full max-w-2xl mb-4 transition-colors ease-in border-b-2 cursor-default border-secondry hover:border-primary">
+                    <h2 class="text-left">Ram</h2>
+                    <h2 class="text-right">More than 1GB</h2>
+                </div>
+                <div
+                    class="flex flex-row justify-between w-full max-w-2xl mb-4 transition-colors ease-in border-b-2 cursor-default border-secondry hover:border-primary">
+                    <h2 class="text-left">HDD Space</h2>
+                    <h2 class="text-right">500MB</h2>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!-- Supporting -->
@@ -256,7 +285,7 @@
     </section>
 
     <!-- contact info -->
-    <section id="contactus" class="flex flex-col w-screen py-16 text-center bg-primary">
+    <section id="contactus" class="flex flex-col w-screen max-w-full py-16 text-center bg-primary">
         <span class="py-4">
             <h2 class="text-xl font-topic">Contact us via email</h2>
             <h1 class="text-3xl">hello@pms.lk</h1>
@@ -269,7 +298,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="w-screen px-4 pt-10 bg-black">
+    <footer class="w-screen max-w-full px-4 pt-10 bg-black">
         <div class="flex flex-wrap max-w-6xl m-auto text-gray-800 justify-left">
 
             <!-- Col-1 -->
