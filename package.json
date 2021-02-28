@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:tailwind": "npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./src/css/styles.css"
+    "dev:tailwind": "npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./src/css/styles.css",
+    "prod:tailwind": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./src/css/styles.css"
   },
   "author": "CharukaHS",
   "license": "MIT",
